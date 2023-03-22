@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+#projects {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    gap: 10px;
+}
+
+.project-hover {
+    display: none;
+}
+
+.thumbnail {
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px lightgray;
+}
+
+
+@media (min-width: 576px) {
+    #projects {
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "project-header ."
+        "project-1 project-2"
+        "project-3 ."
+        ;
+    }
+    
+    #projects-header {
+        grid-area: project-header;
+    }
+    
+    #project-1 {
+        grid-area: project-1;
+    }
+    
+    #project-2 {
+        grid-area: project-2;
+    }
+    
+    #project-3 {
+        grid-area: project-3;
+    }
+}
