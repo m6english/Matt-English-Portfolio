@@ -32,6 +32,48 @@
     width: 16px;
 }
 
+.hide-name {
+    position: absolute;
+    top: -100px;
+    overflow: hidden;
+    animation: slideDown 1.5s forwards;
+    animation-delay: 3s;
+}
+
+.name {
+    position: relative;
+}
+
+.last-name {
+    position: relative;
+    animation: slideRight 1.5s forwards;
+    animation-delay: 2s;
+}
+
+.hide-last-name {
+    position: absolute;
+    top: -100px;
+    overflow: hidden;
+    animation: slideDown 1.5s forwards;
+    animation-delay: 3s;
+}
+
+@keyframes slideDown {
+    100% {
+        top: 3px;
+    }
+}
+
+@keyframes slideRight {
+    100% {
+        margin-left: 110px;
+    }
+}
+
+/*======================================
+============= MEDIA QUERIES ============
+=======================================*/
+
 @media (min-width: 576px) {
 
 }
