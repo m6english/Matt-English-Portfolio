@@ -7,68 +7,108 @@ body {
     background-image: url(../img/laptopsquare.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-y: 25%;
+    background-position-y: 85%;
 }
 
-#projects {
-    display: grid;
-    width: 90%;
-    margin: auto;
-    gap: 10px;
-}
+/*================= 
+=== SOCIAL SVGS === 
+===================*/
 
 .social-svg {
-    width: 15px;
+    width: 17px;
+    margin-right: 5px;
 }
 
-
-#twitter,
-#linkedin,
-#github,
-#resume,
-#work {
+.social {
     position: absolute;
     top: -37px;
     transform: translateX(-50%);
     padding: 5px 7px;
     border-radius: 3px;
     animation: socialSlide 1s forwards;
-    
+    width: 31px;
+    height: 35px;    
+    overflow: hidden;
+    transition-duration: .8s;
+    z-index: -1;
+    margin: auto;
+    text-align: center;
+    color: white;
 }
 
 #twitter {
     left: 50%;
     border: 1px solid blue;
     background-color: blue;
-    animation-delay: 1.7s;
+    animation-delay: 1.5s;
 }
 
 #linkedin {
     left: 60%;
     border: 1px solid rgb(0, 92, 128);
     background-color: rgb(0, 92, 128);
-    animation-delay: 1.9s;
+    animation-delay: 1.7s;
 }
 
 #github {
     left: 70%;
     border: 1px solid rgb(90, 27, 90);
     background-color: rgb(90, 27, 90);
-    animation-delay: 2.1s;
+    animation-delay: 1.9s;
 }
 
 #resume {
     left: 30%;
     border: 1px solid red;
     background-color: red;
-    animation-delay: 1.3s;
+    animation-delay: 1.1s;
+    
 }
 
-#work {
+#projects {
     left: 40%;
     border: 1px solid rgb(221, 188, 0);
     background-color: rgb(221, 188, 0);
-    animation-delay: 1.5s;
+    animation-delay: 1.3s;
+}
+
+/*================= 
+====== HOVERS ===== 
+===================*/
+
+#resume:hover {
+    width: 50%;
+    left: 50%;
+    text-align: center;
+    z-index: 5;
+}
+
+#projects:hover {
+    width: 50%;
+    left: 50%;
+    text-align: center;
+    z-index: 5;
+}
+
+#twitter:hover {
+    width: 50%;
+    left: 50%;
+    text-align: center;
+    z-index: 5;
+}
+
+#linkedin:hover {
+    width: 50%;
+    left: 50%;
+    text-align: center;
+    z-index: 5;
+}
+
+#github:hover {
+    width: 50%;
+    left: 50%;
+    text-align: center;
+    z-index: 5;
 }
 
 
@@ -76,13 +116,8 @@ body {
 ====== HEADER ===== 
 ===================*/
 
-.main-header {
-    height: 100vh;
-    width: 100%;
-}
-
 #title-name {
-    margin: 25% auto 65% 10%;
+    margin: 4rem auto 85% 10%;
     font-size: 30px;
     color: white;
 }
@@ -146,47 +181,13 @@ body {
     margin: auto;
     color: white;
     text-align: center;
-}
-
-#header-text,
-.project-nav {
     animation: fadeIn 1.5s 1.5s linear forwards;
     opacity: 0;
 }
 
-.project-nav {
-    margin-left: 50%;
-    margin-top: 2rem;
-}
-
-/* ========== */
-
-.project-nav,
-.project-hover {
-    transform: translateX(-50%);
-    border: none;
-    padding: 4px;
-    background-color: white;
-    border-radius: 2px;
-    font-size: 12px;
-}
-
-.project-hover {
-    position: absolute;
-    left: 50%;
-    bottom: 10px;
-}
-
-.thumbnail {
-    border-radius: 4px;
-    box-shadow: 0px 0px 10px lightgray;
-    position: relative;
-}
-
-.view-svg {
-    margin-right: 3px;
-    width: 16px;
-}
+/*================= 
+==== KEYFRAMES ==== 
+===================*/
 
 @keyframes socialSlide {
     0% {
@@ -202,9 +203,17 @@ body {
     }
 }
     
-@keyframes slideDown {
+@keyframes lineDownMore {
+    0% {
+        top: 0;
+    }
+    
+    50% {
+        top: 25px;
+    }
+
     100% {
-        top: 3px;
+        top: 50px;
     }
 }
 
@@ -241,63 +250,134 @@ body {
 =======================================*/
 
 @media (min-width: 576px) {
+    body {
+        background-size: 600px 600px;
+        background-position-y: 100px;
+        background-position-x: center;
+    }
+    
+    #title-name {
+        font-size: 43px;
+        margin: 4rem auto 60vh 10%;
+    }
 
-    .hide-name {
-        position: absolute;
-        top: -100px;
-        overflow: hidden;
-        animation: slideDown 1.5s forwards;
-        animation-delay: 3s;
-    }
-    
-    .name {
-        position: relative;
-    }
-    
+    .hide-name,
+    .hide-last-name,
+    .name,
     .last-name {
-        position: relative;
-        animation: slideRight 1.5s forwards;
-        animation-delay: 2s;
-    }
-    
-    .hide-last-name {
-        position: absolute;
-        top: -100px;
-        overflow: hidden;
-        animation: slideDown 1.5s forwards;
-        animation-delay: 3s;
+        font-family: 'Indie Flower', cursive;
+        font-size: 48px;
     }
 
+    #resume {
+        left: 38%
+    }
+
+    #projects {
+        left: 44%
+    }
+
+    #linkedin {
+        left: 56%;
+    }
+
+    #github {
+        left: 62%;
+    }
 }
 
 @media (min-width: 768px) {
-    #projects {
-        width: 80%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "project-header ."
-        "project-1 project-2"
-        "project-3 ."
-        ;
-    }
-    
-    #projects-header {
-        grid-area: project-header;
-    }
-    
-    #project-1 {
-        grid-area: project-1;
-    }
-    
-    #project-2 {
-        grid-area: project-2;
-    }
-    
-    #project-3 {
-        grid-area: project-3;
+    .main-header {
+        width: 90%;
+        margin: auto;
     }
 
-    .project-hover {
-        bottom: 15px;
+    #title-name {
+        font-size: 53px;
+    }
+
+    .hide-name,
+    .hide-last-name,
+    .name,
+    .last-name {
+        font-family: 'Indie Flower', cursive;
+        font-size: 61px;
+    }
+
+    .last-name {
+        animation: lineDownMore 1s 3s linear forwards;
+    }
+
+    #resume {
+        left: 40%
+    }
+
+    #projects {
+        left: 45%
+    }
+
+    #linkedin {
+        left: 55%;
+    }
+
+    #github {
+        left: 60%;
+    }
+}
+
+@media (min-width: 992px) {    
+    #title-name {
+        font-size: 60px;
+    }
+
+    body {
+        background-size: 800px 800px;
+        background-position-y: 0px;
+    }
+
+    .main-header {
+        width: 80%;
+    }
+
+    .hide-name,
+    .hide-last-name,
+    .name,
+    .last-name {
+        font-family: 'Indie Flower', cursive;
+        font-size: 73px;
+    }
+
+    #resume {
+        left: 42%
+    }
+
+    #projects {
+        left: 46%
+    }
+
+    #linkedin {
+        left: 54%;
+    }
+
+    #github {
+        left: 58%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #resume {
+        left: 44%
+    }
+
+    #projects {
+        left: 47%
+    }
+
+    #linkedin {
+        left: 53%;
+    }
+
+    #github {
+        left: 56%;
     }
 }
