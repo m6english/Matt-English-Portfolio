@@ -284,6 +284,27 @@ body {
     #github {
         left: 62%;
     }
+
+    #resume:hover {
+        width: 30%;
+    }
+    
+    #projects:hover {
+        width: 30%;
+    }
+    
+    #twitter:hover {
+        width: 30%;
+    }
+    
+    #linkedin:hover {
+        width: 30%;
+    }
+    
+    #github:hover {
+        width: 30%;
+    }
+    
 }
 
 @media (min-width: 768px) {
@@ -322,6 +343,26 @@ body {
 
     #github {
         left: 60%;
+    }
+
+    #resume:hover {
+        width: 25%;
+    }
+    
+    #projects:hover {
+        width: 25%;
+    }
+    
+    #twitter:hover {
+        width: 25%;
+    }
+    
+    #linkedin:hover {
+        width: 25%;
+    }
+    
+    #github:hover {
+        width: 25%;
     }
 }
 
@@ -362,6 +403,26 @@ body {
     #github {
         left: 58%;
     }
+
+    #resume:hover {
+        width: 20%;
+    }
+    
+    #projects:hover {
+        width: 20%;
+    }
+    
+    #twitter:hover {
+        width: 20%;
+    }
+    
+    #linkedin:hover {
+        width: 20%;
+    }
+    
+    #github:hover {
+        width: 20%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -379,5 +440,25 @@ body {
 
     #github {
         left: 56%;
+    }
+
+    #resume:hover {
+        width: 15%;
+    }
+    
+    #projects:hover {
+        width: 15%;
+    }
+    
+    #twitter:hover {
+        width: 15%;
+    }
+    
+    #linkedin:hover {
+        width: 15%;
+    }
+    
+    #github:hover {
+        width: 15%;
     }
 }
