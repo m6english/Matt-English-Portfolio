@@ -3,11 +3,11 @@
 }
 
 body {
-    background-image: url("../img/laptop.jpg");
+    background-color: black;
+    background-image: url(../img/laptopsquare.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: top;
-    background-color: black;
+    background-position-y: 25%;
 }
 
 #projects {
@@ -20,6 +20,7 @@ body {
 .social-svg {
     width: 15px;
 }
+
 
 #twitter,
 #linkedin,
@@ -39,35 +40,35 @@ body {
     left: 40%;
     border: 1px solid blue;
     background-color: blue;
-    animation-delay: 3.5s;
+    animation-delay: 1.5s;
 }
 
 #linkedin {
     left: 50%;
     border: 1px solid rgb(0, 92, 128);
     background-color: rgb(0, 92, 128);
-    animation-delay: 3.7s;
+    animation-delay: 1.7s;
 }
 
 #github {
     left: 60%;
     border: 1px solid rgb(90, 27, 90);
     background-color: rgb(90, 27, 90);
-    animation-delay: 3.9s;
+    animation-delay: 1.9s;
 }
 
 #resume {
     left: 70%;
     border: 1px solid red;
     background-color: red;
-    animation-delay: 4.1s;
+    animation-delay: 2.1s;
 }
 
 #work {
     left: 30%;
     border: 1px solid rgb(221, 188, 0);
     background-color: rgb(221, 188, 0);
-    animation-delay: 3.3s;
+    animation-delay: 1.3s;
 }
 
 
@@ -81,9 +82,7 @@ body {
 }
 
 #title-name {
-    height: 30%;
-    margin-top: 25%;
-    margin-left: 10%;
+    margin: 25% auto 65% 10%;
     font-size: 30px;
     color: white;
 }
@@ -101,7 +100,6 @@ body {
     position: absolute;
     font-size: 38px;
     overflow: hidden;
-    animation: fontGrow 2s 3s linear forwards;
 }
 
 .name {
@@ -110,7 +108,7 @@ body {
 
 .last-name {
     position: relative;
-    animation: lineDown 1s 2s linear forwards;
+    animation: lineDown 1s 3s linear forwards;
 }
 
 .fade-in {
@@ -120,39 +118,39 @@ body {
 }
 
 .fade-in:nth-child(1) {
-    animation: fadeIn 0.8s 3s forwards;
+    animation: fadeIn 0.8s 4s forwards;
 }
 
 .fade-in:nth-child(2) {
-    animation: fadeIn 0.8s 3.1s forwards;
+    animation: fadeIn 0.8s 4.1s forwards;
 }
 
 .fade-in:nth-child(3) {
-    animation: fadeIn 0.8s 3.2s forwards;
+    animation: fadeIn 0.8s 4.2s forwards;
 }
 
 .fade-in:nth-child(4) {
-    animation: fadeIn 0.8s 3.3s forwards;
+    animation: fadeIn 0.8s 4.3s forwards;
 }
 
 .fade-in:nth-child(5) {
-    animation: fadeIn 0.8s 3.4s forwards;
+    animation: fadeIn 0.8s 4.4s forwards;
 }
 
 .fade-in:nth-child(6) {
-    animation: fadeIn 0.8s 3.5s forwards;
+    animation: fadeIn 0.8s 4.5s forwards;
 }
 
 #header-text {
-    width: 90%;
+    width: 80%;
     margin: auto;
     color: white;
+    text-align: center;
 }
 
 #header-text,
 .project-nav {
-    animation: fadeIn 1.5s linear forwards;
-    animation-delay: 3.5s;
+    animation: fadeIn 1.5s 1.5s linear forwards;
     opacity: 0;
 }
 
