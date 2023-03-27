@@ -14,6 +14,11 @@ body {
     background-color: black;
 }
 
+.content {
+    max-width: 960px;
+    margin: auto;
+}
+
 .about-nav {
     margin-bottom: 2rem;
 }
@@ -382,9 +387,9 @@ body {
         width: 30%;
     }
 
-    #matt-img {
+    /* #matt-img {
         width: 29rem;
-    }
+    } */
     
 }
 
@@ -468,7 +473,7 @@ body {
 
     #matt-img {
         grid-area: matt;
-        width: 22rem;
+        /* width: 22rem; */
     }
 
     #bio-intro {
@@ -509,6 +514,7 @@ body {
 }
 
 @media (min-width: 992px) {    
+
     #title-name {
         font-size: 60px;
     }
@@ -568,6 +574,23 @@ body {
     
     #github:hover {
         width: 20%;
+    }
+
+    #bio-container {
+        display: grid;
+        grid-template-columns: 1fr 30% 30%;
+        grid-template-rows: min-content 1fr;
+        gap: 1rem;
+        grid-template-areas: 
+        "matt intro intro"
+        "matt bio-1 bio-2"
+        ;
+        margin: 2rem 1rem;
+    }
+
+    #bio-1,
+    #bio-2 {
+        margin-top: 0;
     }
 }
 
