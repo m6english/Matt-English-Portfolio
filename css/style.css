@@ -14,6 +14,10 @@ body {
     background-color: black;
 }
 
+.about-nav {
+    margin-bottom: 2rem;
+}
+
 /*================= 
 ==== TECH SVGS ==== 
 ===================*/
@@ -57,6 +61,13 @@ body {
     left: 50%;
     border: 1px solid blue;
     background-color: blue;
+    animation-delay: 1.5s;
+}
+
+#home {
+    left: 50%;
+    border: 1px solid navy;
+    background-color: navy;
     animation-delay: 1.5s;
 }
 
@@ -127,6 +138,13 @@ body {
 }
 
 #github:hover {
+    width: 50%;
+    left: 50%;
+    text-align: center;
+    z-index: 5;
+}
+
+#home:hover {
     width: 50%;
     left: 50%;
     text-align: center;
@@ -213,14 +231,14 @@ body {
 
 #about-name {
     color: white;
-    margin: 4rem auto 3rem 10%;
+    margin: 2rem auto 3rem 10%;
 }
 
 #matt-img {
     display: block;
-    width: 70%;
+    width: 17rem;
     margin: auto;
-    border-radius: 3px;
+    border-radius: 4px;
     opacity: 0;
     animation: fadeIn 1.5s .5s linear forwards;
 }
@@ -348,6 +366,10 @@ body {
         width: 30%;
     }
     
+    #home:hover {
+        width: 30%;
+    }
+
     #about:hover {
         width: 30%;
     }
@@ -358,6 +380,10 @@ body {
     
     #github:hover {
         width: 30%;
+    }
+
+    #matt-img {
+        width: 29rem;
     }
     
 }
@@ -412,6 +438,10 @@ body {
         width: 25%;
     }
     
+    #home:hover {
+        width: 25%;
+    }
+
     #linkedin:hover {
         width: 25%;
     }
@@ -443,6 +473,8 @@ body {
 
     #bio-intro {
         grid-area: intro;
+        font-size: 20px;
+        width: 90%;
     }
 
     #bio-1 {
@@ -463,7 +495,7 @@ body {
     .tech-svg {
         display: block;
         width: 70px;
-        margin-top: 4rem;
+        margin-top: 2rem;
         opacity: 0;
         animation: fadeIn 1.5s 1.5s forwards;
     }
@@ -514,6 +546,10 @@ body {
         left: 58%;
     }
 
+    #home:hover {
+        width: 20%;
+    }
+
     #resume:hover {
         width: 20%;
     }
@@ -553,6 +589,10 @@ body {
     }
 
     #resume:hover {
+        width: 15%;
+    }
+
+    #home:hover {
         width: 15%;
     }
     
