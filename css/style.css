@@ -14,23 +14,16 @@ body {
     background-color: black;
 }
 
-#about-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 /*================= 
 ==== TECH SVGS ==== 
 ===================*/
 
 .tech-svg {
-    width: 70px;
-    margin-top: 4rem;
+    display: none;
 }
 
 #tech-list {
-    display: flex;
-    justify-content: space-evenly;
+    display: none;
 }
 
 /*================= 
@@ -312,7 +305,7 @@ body {
 =======================================*/
 
 @media (min-width: 576px) {
-    body {
+    .index {
         background-size: 600px 600px;
         background-position-y: 100px;
         background-position-x: center;
@@ -461,6 +454,26 @@ body {
         grid-area: bio-2;
         width: 100%;
     }
+
+    #about-header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tech-svg {
+        display: block;
+        width: 70px;
+        margin-top: 4rem;
+        opacity: 0;
+        animation: fadeIn 1.5s 1.5s forwards;
+    }
+    
+    #tech-list {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
 }
 
 @media (min-width: 992px) {    
@@ -468,7 +481,7 @@ body {
         font-size: 60px;
     }
 
-    body {
+    .index {
         background-size: 800px 800px;
         background-position-y: 0px;
     }
