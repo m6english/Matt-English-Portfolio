@@ -2,12 +2,16 @@
     box-sizing: border-box;
 }
 
-body {
+.index {
     background-color: black;
     background-image: url(../img/laptopsquare.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 85%;
+}
+
+body {
+    background-color: black;
 }
 
 /*================= 
@@ -71,6 +75,15 @@ body {
     border: 1px solid orange;
     background-color: orange;
     animation-delay: 1.3s;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    font-weight: bold;
 }
 
 /*================= 
