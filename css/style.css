@@ -61,6 +61,7 @@ body {
 .social-svg {
     width: 17px;
     margin-right: 5px;
+    position: relative;
 }
 
 .social {
@@ -132,7 +133,6 @@ body {
 }
 
 .social-link {
-    display: none;
     color: white;
     text-decoration: none;
 }
@@ -151,10 +151,6 @@ body {
     left: 50%;
     text-align: center;
     z-index: 50;
-}
-
-.social:hover .social-link {
-    display: inline;
 }
 
 /*================= 
