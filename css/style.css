@@ -74,7 +74,7 @@ body {
     height: 35px;    
     overflow: hidden;
     transition-duration: .8s;
-    z-index: 4;
+    z-index: 2;
     margin: auto;
     text-align: center;
     color: white;
@@ -140,54 +140,60 @@ body {
 ====== HOVERS ===== 
 ===================*/
 
-#resume:hover {
+/* #resume:hover {
     width: 50%;
     left: 50%;
     text-align: center;
-    z-index: 5;
+    z-index: 50;
+} */
+
+#projects:hover,
+#resume:hover,
+#about-2:hover,
+#about:hover,
+#linkedin:hover,
+#github:hover,
+#home:hover {
+    width: 50%;
+    left: 50%;
+    text-align: center;
+    z-index: 50;
 }
 
-#projects:hover {
+/* #about-2:hover {
     width: 50%;
     left: 50%;
     text-align: center;
-    z-index: 5;
-}
-
-#about-2:hover {
-    width: 50%;
-    left: 50%;
-    text-align: center;
-    z-index: 5;
+    z-index: 50;
 }
 
 #about:hover {
     width: 50%;
     left: 50%;
     text-align: center;
-    z-index: 5;
+    z-index: 50;
 }
 
 #linkedin:hover {
     width: 50%;
     left: 50%;
     text-align: center;
-    z-index: 5;
+    z-index: 50;
 }
 
 #github:hover {
     width: 50%;
     left: 50%;
     text-align: center;
-    z-index: 5;
+    z-index: 50;
 }
 
 #home:hover {
     width: 50%;
     left: 50%;
     text-align: center;
-    z-index: 5;
-}
+    z-index: 50;
+} */
 
 
 /*================= 
@@ -403,38 +409,15 @@ body {
         left: 62%;
     }
 
-    #resume:hover {
-        width: 30%;
-    }
-
-    #about-2:hover {
-        width: 30%;
-    }
-    
-    #projects:hover {
-        width: 30%;
-    }
-    
-    #home:hover {
-        width: 30%;
-    }
-
-    #about:hover {
-        width: 30%;
-    }
-    
-    #linkedin:hover {
-        width: 30%;
-    }
-    
+    #resume:hover,
+    #about:hover,
+    #about-2:hover,
+    #projects:hover,
+    #home:hover,
+    #linkedin:hover,
     #github:hover {
         width: 30%;
-    }
-
-    /* #matt-img {
-        width: 29rem;
-    } */
-    
+    }    
 }
 
 @media (min-width: 768px) {
@@ -476,34 +459,16 @@ body {
         left: 60%;
     }
 
-    #resume:hover {
-        width: 25%;
-    }
-    
-    #projects:hover {
-        width: 25%;
-    }
-
-    #about-2:hover {
-        width: 25%;
-    }
-    
-    #about:hover {
-        width: 25%;
-    }
-    
-    #home:hover {
-        width: 25%;
-    }
-
-    #linkedin:hover {
-        width: 25%;
-    }
-    
+    #resume:hover,
+    #about:hover,
+    #about-2:hover,
+    #projects:hover,
+    #home:hover,
+    #linkedin:hover,
     #github:hover {
         width: 25%;
     }
-
+    
     .social-link:hover {
         font-weight: bold;
     }
@@ -522,7 +487,6 @@ body {
 
     #matt-img {
         grid-area: matt;
-        /* width: 22rem; */
     }
 
     #bio-intro {
@@ -610,30 +574,12 @@ body {
         left: 58%;
     }
 
-    #home:hover {
-        width: 20%;
-    }
-
-    #resume:hover {
-        width: 20%;
-    }
-    
-    #projects:hover {
-        width: 20%;
-    }
-
-    #about-2:hover {
-        width: 20%;
-    }
-    
-    #about:hover {
-        width: 20%;
-    }
-    
-    #linkedin:hover {
-        width: 20%;
-    }
-    
+    #resume:hover,
+    #about:hover,
+    #about-2:hover,
+    #projects:hover,
+    #home:hover,
+    #linkedin:hover,
     #github:hover {
         width: 20%;
     }
@@ -674,30 +620,12 @@ body {
         left: 56%;
     }
 
-    #resume:hover {
-        width: 15%;
-    }
-
-    #home:hover {
-        width: 15%;
-    }
-    
-    #projects:hover {
-        width: 15%;
-    }
-
-    #about-2:hover {
-        width: 15%;
-    }
-    
-    #about:hover {
-        width: 15%;
-    }
-    
-    #linkedin:hover {
-        width: 15%;
-    }
-    
+    #resume:hover,
+    #about:hover,
+    #about-2:hover,
+    #projects:hover,
+    #home:hover,
+    #linkedin:hover,
     #github:hover {
         width: 15%;
     }
