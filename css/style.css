@@ -35,6 +35,17 @@ body {
     display: none;
 }
 
+.tech-svg-2 {
+    width: 55px;
+}
+
+#tech-list-2 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    margin: 1rem auto;
+}
+
 /*================= 
 === SOCIAL SVGS === 
 ===================*/
@@ -500,6 +511,14 @@ body {
     #tech-list {
         display: flex;
         justify-content: space-evenly;
+    }
+
+    #tech-list-2 {
+        display: none;
+    }
+
+    #tech-svg-2 {
+        display: none;
     }
 
 
