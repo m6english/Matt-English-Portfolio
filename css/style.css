@@ -61,7 +61,6 @@ body {
 .social-svg {
     width: 17px;
     margin-right: 5px;
-    position: relative;
 }
 
 .social {
@@ -73,13 +72,10 @@ body {
     animation: socialSlide 1s forwards;
     width: 31px;
     height: 35px;    
-    overflow: hidden;
     transition-duration: .8s;
     z-index: 2;
     margin: auto;
     text-align: center;
-    color: white;
-    text-decoration: none;
 }
 
 #about {
@@ -133,8 +129,11 @@ body {
 }
 
 .social-link {
+    font-size: 0px;
     color: white;
     text-decoration: none;
+    transition-duration: .5s;
+    transition-delay: .1s;
 }
 
 /*================= 
@@ -151,6 +150,10 @@ body {
     left: 50%;
     text-align: center;
     z-index: 50;
+}
+
+.social:hover .social-link {
+    font-size: 16px;
 }
 
 /*================= 
