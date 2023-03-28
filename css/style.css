@@ -132,6 +132,7 @@ body {
 }
 
 .social-link {
+    display: none;
     color: white;
     text-decoration: none;
 }
@@ -139,14 +140,6 @@ body {
 /*================= 
 ====== HOVERS ===== 
 ===================*/
-
-/* #resume:hover {
-    width: 50%;
-    left: 50%;
-    text-align: center;
-    z-index: 50;
-} */
-
 #projects:hover,
 #resume:hover,
 #about-2:hover,
@@ -160,41 +153,9 @@ body {
     z-index: 50;
 }
 
-/* #about-2:hover {
-    width: 50%;
-    left: 50%;
-    text-align: center;
-    z-index: 50;
+.social:hover .social-link {
+    display: inline;
 }
-
-#about:hover {
-    width: 50%;
-    left: 50%;
-    text-align: center;
-    z-index: 50;
-}
-
-#linkedin:hover {
-    width: 50%;
-    left: 50%;
-    text-align: center;
-    z-index: 50;
-}
-
-#github:hover {
-    width: 50%;
-    left: 50%;
-    text-align: center;
-    z-index: 50;
-}
-
-#home:hover {
-    width: 50%;
-    left: 50%;
-    text-align: center;
-    z-index: 50;
-} */
-
 
 /*================= 
 ====== HEADER ===== 
