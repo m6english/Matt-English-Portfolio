@@ -28,7 +28,8 @@ body {
     top: -7px;
     width: 100%;
     height: 39px;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
+    z-index: 1;
 }
 
 /*================= 
@@ -45,6 +46,8 @@ body {
 
 .tech-svg-2 {
     width: 55px;
+    opacity: 0;
+    animation: fadeIn 1.5s 1.5s forwards;
 }
 
 #tech-list-2 {
@@ -268,12 +271,28 @@ body {
 #projects-container {
     display: grid;
     width: 80%;
-    margin: 5rem auto 2rem;
-    gap: 1rem;
+    margin: 2rem auto 2rem;
+    gap: 2rem;
+    opacity: 0;
+    animation: fadeIn 1.5s .5s linear forwards;
+}
+
+.project-ss {
+    box-shadow: 0px 0px 25px rgb(112, 112, 112);
+    border-radius: 4px;
+    max-height: 22rem;
+    margin: auto;
 }
 
 .project-ss:hover {
     opacity: .6;
+}
+
+#projects-title {
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 44px;
+    margin: 3rem auto 0rem 5rem;
 }
 
 /*================= 
@@ -377,7 +396,15 @@ body {
     #linkedin:hover,
     #github:hover {
         width: 30%;
-    }    
+    }  
+    
+    .social-link:hover {
+        text-decoration: underline;
+    }
+
+    #projects-title {
+        font-size: 53px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -427,10 +454,6 @@ body {
     #linkedin:hover,
     #github:hover {
         width: 25%;
-    }
-    
-    .social-link:hover {
-        font-weight: bold;
     }
 
     #bio-container {
@@ -491,7 +514,17 @@ body {
         display: none;
     }
 
+    #projects-title {
+        font-size: 69px;
+        margin-left: 8rem;
+    }
 
+    #projects-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 3rem;
+    }
+    
 }
 
 @media (min-width: 992px) {    
