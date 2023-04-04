@@ -4,7 +4,7 @@ let github = document.getElementById('github');
 let linkedIn = document.getElementById('linkedin');
 let about = document.getElementById('about');
 
-const mediaQuery = window.matchMedia('(max-width: 576px)');
+const mediaQuery = window.matchMedia('(max-width: 450px)')
 
 const resumeStyle = e => {
     e.stopPropagation();
@@ -44,4 +44,4 @@ if (mediaQuery.matches) {
     github.addEventListener("click", githubStyle);
     linkedIn.addEventListener("click", linkedInStyle);
     about.addEventListener("click", aboutStyle);
-};
+}

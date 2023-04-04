@@ -4,7 +4,7 @@ let github = document.getElementById('github');
 let linkedIn = document.getElementById('linkedin');
 let home = document.getElementById('home');
 
-const mediaQuery = window.matchMedia('(max-width: 576px)');
+const mediaQuery = window.matchMedia('(max-width: 450px)');
 
 const resumeStyle = e => {
     e.stopPropagation();

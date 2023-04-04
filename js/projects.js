@@ -4,7 +4,7 @@ let linkedIn = document.getElementById('linkedin');
 let aboutTwo = document.getElementById('about-2');
 let home = document.getElementById('home');
 
-const mediaQuery = window.matchMedia("(max-width: 576px)");
+const mediaQuery = window.matchMedia("(max-width: 450px)");
 
 const resumeStyle = e => {
     e.stopPropagation();
