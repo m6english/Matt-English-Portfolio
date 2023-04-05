@@ -382,6 +382,7 @@ body {
     border: none;
     background-color: white;
     transition-duration: .3s;
+    color: black;
 }
 
 #contact-header {
