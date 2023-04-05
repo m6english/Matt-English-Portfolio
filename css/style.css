@@ -348,6 +348,53 @@ body {
 }
 
 /*================= 
+=== CONTACT FORM == 
+===================*/
+
+#contact {
+    width: 80%;
+    margin: 5rem auto;
+    opacity: 0;
+    animation: fadeIn 1.5s .5s linear forwards;
+}
+
+#contact-form {
+    display: grid;
+}
+
+#input-email,
+#input-message {
+    color: white;
+    background-color: rgb(37, 37, 37);
+    border: none;
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 1rem;
+}
+
+#input-message {
+    height: 15rem;
+}
+
+#send-button {
+    border-radius: 3px;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    transition-duration: .3s;
+}
+
+#send-button:hover {
+    background-color: rgb(104, 104, 104);
+    color: white;
+}
+
+#contact-header {
+    color: white;
+    text-align: center;
+}
+
+/*================= 
 ==== KEYFRAMES ==== 
 ===================*/
 
