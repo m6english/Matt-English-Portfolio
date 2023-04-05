@@ -384,11 +384,6 @@ body {
     transition-duration: .3s;
 }
 
-#send-button:hover {
-    background-color: rgb(104, 104, 104);
-    color: white;
-}
-
 #contact-header {
     color: white;
     text-align: center;
@@ -497,6 +492,11 @@ body {
 
     #projects-title {
         font-size: 53px;
+    }
+
+    #send-button:hover {
+        background-color: rgb(104, 104, 104);
+        color: white;
     }
 }
 
