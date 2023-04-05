@@ -2,12 +2,9 @@
     box-sizing: border-box;
 }
 
-.index {
-    background-color: black;
-    background-image: url(../img/laptopsquare.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 85%;
+#main-img {
+    width: 90%;
+    margin: auto;
 }
 
 body {
@@ -219,7 +216,7 @@ body {
 ===================*/
 
 #title-name {
-    margin: 4rem auto 85% 10%;
+    margin-top: 4rem;
     font-size: 30px;
     color: white;
 }
@@ -407,15 +404,9 @@ body {
 =======================================*/
 
 @media (min-width: 576px) {
-    .index {
-        background-size: 600px 600px;
-        background-position-y: 100px;
-        background-position-x: center;
-    }
-
     #title-name {
         font-size: 43px;
-        margin: 4rem auto 60vh 10%;
+        margin: 4rem auto auto 10%;
     }
 
     .hide-name,
@@ -586,11 +577,6 @@ body {
 
     #title-name {
         font-size: 60px;
-    }
-
-    .index {
-        background-size: 800px 800px;
-        background-position-y: 0px;
     }
 
     .main-header {
