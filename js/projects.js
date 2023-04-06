@@ -8,9 +8,9 @@ let home = document.getElementById('home');
 const mmbpBtn = document.getElementById('mmbp-button');
 const mmbpModal = document.getElementById('mmbp-modal');
 const mmbpClose = document.getElementById('mmbp-close');
-const galleryBtn = document.getElementById('gallery-button');
-const galleryModal = document.getElementById('gallery-modal');
-const galleryClose = document.getElementById('gallery-close');
+const employeeBtn = document.getElementById('employee-button');
+const employeeModal = document.getElementById('employee-modal');
+const employeeClose = document.getElementById('employee-close');
 const graphBtn = document.getElementById('graph-button');
 const graphModal = document.getElementById('graph-modal');
 const graphClose = document.getElementById('graph-close');
@@ -70,12 +70,12 @@ mmbpClose.addEventListener("click", () => {
     mmbpModal.style.display = 'none';
 })
 
-galleryBtn.addEventListener("click", () => {
-    galleryModal.style.display = 'block';
+employeeBtn.addEventListener("click", () => {
+    employeeModal.style.display = 'block';
 })
 
-galleryClose.addEventListener("click", () => {
-    galleryModal.style.display = 'none';
+employeeClose.addEventListener("click", () => {
+    employeeModal.style.display = 'none';
 })
 
 graphBtn.addEventListener("click", () => {
