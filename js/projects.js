@@ -4,10 +4,21 @@ let linkedIn = document.getElementById('linkedin');
 let aboutTwo = document.getElementById('about-2');
 let home = document.getElementById('home');
 
+
 const mmbpBtn = document.getElementById('mmbp-button');
+const mmbpModal = document.getElementById('mmbp-modal');
+const mmbpClose = document.getElementById('mmbp-close');
 const galleryBtn = document.getElementById('gallery-button');
+const galleryModal = document.getElementById('gallery-modal');
+const galleryClose = document.getElementById('gallery-close');
 const graphBtn = document.getElementById('graph-button');
+const graphModal = document.getElementById('graph-modal');
+const graphClose = document.getElementById('graph-close');
 const wosBtn = document.getElementById('wos-button');
+const wosModal = document.getElementById('wos-modal');
+const wosClose = document.getElementById('wos-close');
+
+const btnClose = document.querySelectorAll('.modal-close');
 
 const mediaQuery = window.matchMedia("(max-width: 450px)");
 
@@ -52,5 +63,34 @@ if (mediaQuery.matches) {
 };
 
 mmbpBtn.addEventListener("click", () => {
-    
+    mmbpModal.style.display = 'block';
 })
+
+mmbpClose.addEventListener("click", () => {
+    mmbpModal.style.display = 'none';
+})
+
+galleryBtn.addEventListener("click", () => {
+    galleryModal.style.display = 'block';
+})
+
+galleryClose.addEventListener("click", () => {
+    galleryModal.style.display = 'none';
+})
+
+graphBtn.addEventListener("click", () => {
+    graphModal.style.display = 'block';
+})
+
+graphClose.addEventListener("click", () => {
+    graphModal.style.display = 'none';
+})
+
+wosBtn.addEventListener("click", () => {
+    wosModal.style.display = 'block';
+})
+
+wosClose.addEventListener("click", () => {
+    wosModal.style.display = 'none';
+})
+

@@ -346,6 +346,7 @@ body {
 
 .project {
     position: relative;
+    margin: auto;
 }
 
 .projects-button {
@@ -379,8 +380,94 @@ body {
 /*================== 
 == PROJECT MODALS == 
 ====================*/
+.project-modal {
+    position: fixed;
+    display: none;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .4);
+    overflow: auto;
+    max-width: 960px;
+    backdrop-filter: blur(3px);
+}
 
+.modal-img {
+    border: 1px black solid;
+    margin-bottom: .5rem;
+    grid-area: modal-img;
+}
 
+.modal-header {
+    margin: auto auto .5rem;
+    grid-area: modal-header;
+}
+
+.modal-content {
+    background-color: rgba(75, 75, 75, 0.9);
+    color: white;
+    margin: 15% auto;
+    width: 95%;
+    padding: 1rem;
+    border-radius: 3px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px lightgray solid;
+    padding-top: 0px;
+    background-color: white;
+    color: gray;
+    font-size: 15px;
+    transition-duration: .3s;
+}
+
+.modal-close:hover {
+    background-color: rgb(104, 104, 104);
+    color: white;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: modal-buttons;
+}
+
+.modal-live:hover,
+.modal-code:hover {
+    background-color: rgb(104, 104, 104);
+    color: white;
+}
+
+.modal-live,
+.modal-code {
+    width: 45%;
+    border-radius: 3px;
+    padding: 7px;
+    background-color: white;
+    color: black;
+    border: 1px white solid;
+    transition-duration: .3s;
+}
+
+.modal-text {
+    grid-area: modal-text;
+}
+
+.modal-tech {
+    grid-area: modal-tech;
+    margin-top: 0px;
+    text-align: center;
+    font-weight: bold;
+}
 
 /*================= 
 === CONTACT FORM == 
@@ -533,6 +620,19 @@ body {
     #send-button:hover {
         background-color: rgb(104, 104, 104);
         color: white;
+    }
+
+    .modal-content {
+        display: grid;
+        column-gap: 1rem;;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat((4)min-content);
+        grid-template-areas:
+        "modal-header modal-header"
+        "modal-img modal-text"
+        "modal-tech modal-text"
+        "modal-buttons modal-buttons"
+        ;
     }
 }
 
