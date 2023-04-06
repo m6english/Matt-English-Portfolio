@@ -391,7 +391,6 @@ body {
     height: 100vh;
     background-color: rgba(0, 0, 0, .4);
     overflow: auto;
-    max-width: 700px;
     backdrop-filter: blur(3px);
 }
 
@@ -421,9 +420,9 @@ body {
     background-color: rgba(75, 75, 75, 0.9);
     color: white;
     margin: 15% auto;
-    width: 95%;
     padding: 1rem;
     border-radius: 3px;
+    max-width: 700px;
 }
 
 .modal-close {
