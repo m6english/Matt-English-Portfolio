@@ -277,7 +277,7 @@ body {
 }
 
 #header-text {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     color: white;
     text-align: center;
@@ -668,7 +668,7 @@ body {
     }
 
     #header-text {
-        font-size: 18px;
+        font-size: 22px;
     }
 }
 
