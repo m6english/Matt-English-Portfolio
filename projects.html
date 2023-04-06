@@ -15,7 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 <div class="content">
-<body>
+
+    <body>
         <div class="social" id="github"><svg class="social-svg" viewBox="0 -0.5 24 24"
                 id="meteor-icon-kit__solid-github" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -36,10 +37,11 @@
                         d="M478.234 600.75V1920H.036V600.75h478.198Zm720.853-2.438v77.737c69.807-45.056 150.308-71.249 272.38-71.249 397.577 0 448.521 308.666 448.521 577.562v737.602h-480.6v-700.836c0-117.867-42.173-140.215-120.15-140.215-74.134 0-120.151 23.55-120.151 140.215v700.836h-480.6V598.312h480.6ZM239.099 0c131.925 0 239.099 107.294 239.099 239.099s-107.174 239.099-239.1 239.099C107.295 478.198 0 370.904 0 239.098 0 107.295 107.294 0 239.099 0Z"
                         fill-rule="evenodd"></path>
                 </g>
-            </svg><a href="https://www.linkedin.com/in/matthew-english-b46848180/" class="social-link" target="_blank">LinkedIn</a></div>
+            </svg><a href="https://www.linkedin.com/in/matthew-english-b46848180/" class="social-link"
+                target="_blank">LinkedIn</a></div>
 
-        <div class="social" id="home"><svg class="social-svg" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+        <div class="social" id="home"><svg class="social-svg" viewBox="0 0 24 24" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                 <g id="SVGRepo_iconCarrier">
@@ -87,28 +89,45 @@
             </svg><a href="img/Resume.pdf" target="_blank" class="social-link">Resume</a></div>
 
         <div class="social" id="about-2"><svg class="social-svg" viewBox="0 0 1024 1024"
-            xmlns="http://www.w3.org/2000/svg" fill="#000000">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-            <g id="SVGRepo_iconCarrier">
-                <path fill="#ffffff"
-                    d="M288 320a224 224 0 1 0 448 0 224 224 0 1 0-448 0zm544 608H160a32 32 0 0 1-32-32v-96a160 160 0 0 1 160-160h448a160 160 0 0 1 160 160v96a32 32 0 0 1-32 32z">
-                </path>
-            </g>
-        </svg>
-        </svg><a href="about.html" class="social-link">About Me</a></div>
-    
-    <main>
-        <section>
-            <h1 id="projects-title">Projects</h1>
-            <div id="projects-container">
-            <img src="img/mmbpscreenshot.png" class="img-fluid project-ss">
-            <img src="img/galleryproject.png" class="img-fluid project-ss">
-            <img src="img/graphproject.png" class="img-fluid project-ss">
-            <img src="img/wosproject.png" class="img-fluid project-ss">
-            </div>
-        </section>
-    </main>
+                xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path fill="#ffffff"
+                        d="M288 320a224 224 0 1 0 448 0 224 224 0 1 0-448 0zm544 608H160a32 32 0 0 1-32-32v-96a160 160 0 0 1 160-160h448a160 160 0 0 1 160 160v96a32 32 0 0 1-32 32z">
+                    </path>
+                </g>
+            </svg>
+            </svg><a href="about.html" class="social-link">About Me</a></div>
+
+        <main>
+            <section>
+                <h1 id="projects-title">Projects</h1>
+                <div id="projects-container">
+                    <div id="mmbp-project" class="project">
+                        <img src="img/mmbpscreenshot.png" class="img-fluid project-ss">
+                        <button id="mmbp-button" class="projects-button">View Project</button>
+                    </div>
+                    <div id="gallery-project" class="project">
+                        <img src="img/galleryproject.png" class="img-fluid project-ss">
+                        <button id="gallery-button" class="projects-button">View Project</button>
+                    </div>
+                    <div id="graph-project" class="project">
+                        <img src="img/graphproject.png" class="img-fluid project-ss">
+                        <button id="graph-button" class="projects-button">View Project</button>
+                    </div>
+                    <div id="wos-project" class="project">
+                        <img src="img/wosproject.png" class="img-fluid project-ss">
+                        <button id="wos-button" class="projects-button">View Project</button>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="mmbp-modal">
+                    <img src="img/mmbpscreenshot.png" class="img-fluid project-modal">
+                </div>
+            </section>
+        </main>
 </div>
 <div id="blur"></div>
 <script src="js/projects.js"></script>

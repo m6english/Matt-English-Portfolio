@@ -4,6 +4,11 @@ let linkedIn = document.getElementById('linkedin');
 let aboutTwo = document.getElementById('about-2');
 let home = document.getElementById('home');
 
+const mmbpBtn = document.getElementById('mmbp-button');
+const galleryBtn = document.getElementById('gallery-button');
+const graphBtn = document.getElementById('graph-button');
+const wosBtn = document.getElementById('wos-button');
+
 const mediaQuery = window.matchMedia("(max-width: 450px)");
 
 const resumeStyle = e => {
@@ -45,3 +50,7 @@ if (mediaQuery.matches) {
     aboutTwo.addEventListener("click", aboutTwoStyle);
     home.addEventListener("click", homeStyle);
 };
+
+mmbpBtn.addEventListener("click", () => {
+    
+})
