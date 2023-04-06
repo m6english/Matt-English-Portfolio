@@ -430,7 +430,7 @@ body {
 .modal-content {
     background-color: rgba(75, 75, 75);
     color: white;
-    margin: 15% auto;
+    margin: 5rem auto;
     padding: 1rem;
     border-radius: 3px;
     max-width: 700px;
