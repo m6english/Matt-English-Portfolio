@@ -219,6 +219,7 @@ body {
     margin-top: 4rem;
     font-size: 30px;
     color: white;
+    font-family: 'Play', sans-serif;
 }
 
 .hide-name,
@@ -277,11 +278,15 @@ body {
 
 #header-text {
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     color: white;
     text-align: center;
     animation: fadeIn 1.5s 1.5s linear forwards;
     opacity: 0;
+}
+
+#laptop-img {
+    margin: 0 auto;
 }
 
 /*================= 
@@ -291,6 +296,7 @@ body {
 #about-name {
     color: white;
     margin: 2rem auto 3rem 10%;
+    font-family: 'Play', sans-serif;
 }
 
 #matt-img {
@@ -338,10 +344,13 @@ body {
 }
 
 #projects-title {
+    opacity: 0;
     color: white;
-    font-family: 'Indie Flower', cursive;
     font-size: 44px;
-    margin: 3rem auto 0rem 5rem;
+    margin-top: 3rem;
+    animation: fadeIn 1.5s .5s linear forwards;
+    text-align: center;
+    font-family: 'Play', sans-serif;
 }
 
 .project {
@@ -361,6 +370,7 @@ body {
     color: black;
     border: 1px white solid;
     transition-duration: .3s;
+    font-family: 'Play', sans-serif;
 }
 
 .projects-button:hover {
@@ -401,6 +411,7 @@ body {
 }
 
 .modal-header {
+    font-family: 'Play', sans-serif;
     grid-area: modal-header;
 }
 
@@ -417,7 +428,7 @@ body {
 }
 
 .modal-content {
-    background-color: rgba(75, 75, 75, 0.9);
+    background-color: rgba(75, 75, 75);
     color: white;
     margin: 15% auto;
     padding: 1rem;
@@ -448,6 +459,7 @@ body {
 .modal-buttons {
     display: flex;
     justify-content: center;
+    font-family: 'Play', sans-serif;
     grid-area: modal-buttons;
 }
 
@@ -486,13 +498,15 @@ body {
 
 #contact {
     width: 80%;
-    margin: 5rem auto;
+    margin: 3rem auto;
     opacity: 0;
     animation: fadeIn 1.5s .5s linear forwards;
+    font-family: 'Play', sans-serif;
 }
 
 #contact-form {
     display: grid;
+    font-family: 'Play', sans-serif;
 }
 
 #input-email,
@@ -516,6 +530,7 @@ body {
     background-color: white;
     transition-duration: .3s;
     color: black;
+    font-family: 'Play', sans-serif;
 }
 
 #contact-header {
@@ -631,6 +646,7 @@ body {
     #send-button:hover {
         background-color: rgb(104, 104, 104);
         color: white;
+        font-family: 'Play', sans-serif;
     }
 
     .modal-content {
@@ -646,6 +662,10 @@ body {
         "modal-footer-hr modal-footer-hr"
         "modal-buttons modal-buttons"
         ;
+    }
+
+    #header-text {
+        font-size: 18px;
     }
 }
 
@@ -758,7 +778,6 @@ body {
 
     #projects-title {
         font-size: 69px;
-        margin-left: 8rem;
     }
 
     #projects-container {
