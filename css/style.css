@@ -3,8 +3,11 @@
 }
 
 #main-img {
+    display: grid;
     width: 90%;
-    margin: auto;
+    height: 50vh;
+    grid-template-rows: 1fr 1fr;
+    margin: 4rem auto;
 }
 
 body {
@@ -19,7 +22,7 @@ body {
 .about-nav {
     margin-bottom: 2rem;
 }
-
+/* 
 #blur {
     position: fixed;
     top: -7px;
@@ -27,7 +30,7 @@ body {
     height: 39px;
     backdrop-filter: blur(4px);
     z-index: 1;
-}
+} */
 
 /*================= 
 ==== TECH SVGS ==== 
@@ -59,157 +62,94 @@ body {
 ===================*/
 
 .social-svg {
-    width: 17px;
-    margin-right: 5px;
+    width: 23px;
+    margin-bottom: 1px;
 }
 
 .social {
-    position: fixed;
-    top: -37px;
-    transform: translateX(-50%);
-    padding: 5px 7px;
+    position: relative;
+    top: -57px;
+    padding: 9px 0 0 0;
     border-radius: 3px;
     animation: socialSlide 1s forwards;
-    width: 31px;
-    height: 35px;
-    transition-duration: .8s;
+    width: 60px;
+    height: 52px;
+    transition-duration: .3s;
     z-index: 2;
     margin: auto;
     text-align: center;
+    font-size: 12px;
+    color: white;
 }
 
-#about {
+#nav-container {
+    width: 320px;
+    position: fixed;
     left: 50%;
-    border: 1px solid blue;
-    background-color: blue;
-    animation-delay: 1.5s;
+    transform: translateX(-50%);
+    top: 0;
+    display: flex;
+    align-content: center;
 }
 
-#about-2 {
-    left: 40%;
-    border: 1px solid blue;
-    background-color: blue;
+.social:nth-child(1) {
+    animation-delay: .9s;
+}
+
+.social:nth-child(2) {
+    animation-delay: 1.1s;
+}
+
+.social:nth-child(3) {
     animation-delay: 1.3s;
 }
 
-#about-expand {
-    width: 50%;
-    left: 50%;
-    text-align: center;
-    z-index: 50;
+.social:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.social:nth-child(5) {
+    animation-delay: 1.7s;
+}
+
+
+#about {
     border: 1px solid blue;
     background-color: blue;
 }
 
-
 #home {
-    left: 50%;
-    border: 1px solid rgb(0, 0, 148);
-    background-color: rgb(0, 0, 148);
-    animation-delay: 1.5s;
+    border: 1px solid rgb(0, 162, 255);
+    background-color: rgb(0, 162, 255);
 }
 
-#home-expand {
-    width: 50%;
-    left: 50%;
-    text-align: center;
-    z-index: 50;
-    border: 1px solid rgb(0, 0, 148);
-    background-color: rgb(0, 0, 148);
-}
 
 #linkedin {
-    left: 60%;
-    border: 1px solid rgb(0, 92, 128);
-    background-color: rgb(0, 92, 128);
-    animation-delay: 1.7s;
-}
-
-#linkedin-expand {
-    width: 50%;
-    left: 50%;
-    text-align: center;
-    z-index: 50;
     border: 1px solid rgb(0, 92, 128);
     background-color: rgb(0, 92, 128);
 }
-
 
 #github {
-    left: 70%;
-    border: 1px solid rgb(90, 27, 90);
-    background-color: rgb(90, 27, 90);
-    animation-delay: 1.9s;
-}
-
-#github-expand {
-    width: 50%;
-    left: 50%;
-    text-align: center;
-    z-index: 50;
     border: 1px solid rgb(90, 27, 90);
     background-color: rgb(90, 27, 90);
 }
 
 #resume {
-    left: 30%;
-    border: 1px solid red;
-    background-color: red;
-    animation-delay: 1.1s;
-}
-
-#resume-expand {
-    width: 50%;
-    left: 50%;
-    text-align: center;
-    z-index: 50;
     border: 1px solid red;
     background-color: red;
 }
 
 #projects {
-    left: 40%;
-    border: 1px solid orange;
-    background-color: orange;
-    animation-delay: 1.3s;
-}
-
-#projects-expand {
-    width: 50%;
-    left: 50%;
-    text-align: center;
-    z-index: 50;
     border: 1px solid orange;
     background-color: orange;
 }
 
-.social-link {
-    font-size: 0px;
-    color: white;
-    text-decoration: none;
-    transition-duration: .5s;
-    transition-delay: .1s;
-}
 
 /*================= 
 ====== HOVERS ===== 
 ===================*/
-#projects:hover,
-#resume:hover,
-#about-2:hover,
-#about:hover,
-#linkedin:hover,
-#github:hover,
-#home:hover {
-    width: 50%;
-    left: 50%;
-    text-align: center;
-    z-index: 50;
-}
 
-.social:hover .social-link {
-    font-size: 16px;
-}
+
 
 /*================= 
 ====== HEADER ===== 
@@ -321,6 +261,11 @@ body {
     text-align: center;
     font-weight: bold;
     margin-bottom: 1rem;
+}
+
+#about-header {
+    position: relative;
+    margin-top: 4rem;
 }
 
 /*================= 
@@ -547,7 +492,7 @@ body {
 
 @keyframes socialSlide {
     0% {
-        top: -37px
+        top: -57px
     }
 
     50% {
@@ -611,37 +556,6 @@ body {
         font-size: 48px;
     }
 
-    #resume {
-        left: 38%
-    }
-
-    #projects,
-    #about-2 {
-        left: 44%
-    }
-
-    #linkedin {
-        left: 56%;
-    }
-
-    #github {
-        left: 62%;
-    }
-
-    #resume:hover,
-    #about:hover,
-    #about-2:hover,
-    #projects:hover,
-    #home:hover,
-    #linkedin:hover,
-    #github:hover {
-        width: 30%;
-    }
-
-    .social-link:hover {
-        text-decoration: underline;
-    }
-
     #projects-title {
         font-size: 53px;
     }
@@ -670,6 +584,44 @@ body {
     #header-text {
         font-size: 22px;
     }
+
+    #about:hover {
+        border: 1px solid rgb(0, 0, 156);
+        background-color: rgb(0, 0, 156);
+        font-weight: bold;
+    }
+    
+    #home:hover {
+        border: 1px solid rgb(0, 105, 167);
+        background-color: rgb(0, 105, 167);
+        font-weight: bold;
+    }
+    
+    
+    #linkedin:hover {
+        border: 1px solid rgb(0, 57, 80);
+        background-color: rgb(0, 57, 80);
+        font-weight: bold;
+    }
+    
+    #github:hover {
+        border: 1px solid rgb(51, 16, 51);
+        background-color: rgb(51, 16, 51);
+        font-weight: bold;
+    }
+    
+    #resume:hover {
+        border: 1px solid rgb(124, 0, 0);
+        background-color: rgb(124, 0, 0);
+        font-weight: bold;
+    }
+    
+    #projects:hover {
+        border: 1px solid rgb(134, 87, 0);
+        background-color: rgb(134, 87, 0);
+        font-weight: bold;
+    }
+    
 }
 
 @media (min-width: 768px) {
@@ -692,33 +644,6 @@ body {
 
     .last-name {
         animation: lineDownMore .6s 2.5s linear forwards;
-    }
-
-    #resume {
-        left: 40%
-    }
-
-    #projects,
-    #about-2 {
-        left: 45%
-    }
-
-    #linkedin {
-        left: 55%;
-    }
-
-    #github {
-        left: 60%;
-    }
-
-    #resume:hover,
-    #about:hover,
-    #about-2:hover,
-    #projects:hover,
-    #home:hover,
-    #linkedin:hover,
-    #github:hover {
-        width: 25%;
     }
 
     #bio-container {
@@ -828,33 +753,6 @@ body {
         font-size: 73px;
     }
 
-    #resume {
-        left: 42%
-    }
-
-    #projects,
-    #about-2 {
-        left: 46%
-    }
-
-    #linkedin {
-        left: 54%;
-    }
-
-    #github {
-        left: 58%;
-    }
-
-    #resume:hover,
-    #about:hover,
-    #about-2:hover,
-    #projects:hover,
-    #home:hover,
-    #linkedin:hover,
-    #github:hover {
-        width: 20%;
-    }
-
     #bio-container {
         display: grid;
         grid-template-columns: 1fr 30% 30%;
@@ -874,30 +772,5 @@ body {
 }
 
 @media (min-width: 1200px) {
-    #resume {
-        left: 44%
-    }
 
-    #projects,
-    #about-2 {
-        left: 47%
-    }
-
-    #linkedin {
-        left: 53%;
-    }
-
-    #github {
-        left: 56%;
-    }
-
-    #resume:hover,
-    #about:hover,
-    #about-2:hover,
-    #projects:hover,
-    #home:hover,
-    #linkedin:hover,
-    #github:hover {
-        width: 15%;
-    }
 }

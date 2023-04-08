@@ -4,44 +4,23 @@ let github = document.getElementById('github');
 let linkedIn = document.getElementById('linkedin');
 let home = document.getElementById('home');
 
-const mediaQuery = window.matchMedia('(max-width: 450px)');
+resume.addEventListener("click", () => {
+    window.open("img/Resume.pdf");
+})
 
-const resumeStyle = e => {
-    e.stopPropagation();
-    resume.setAttribute('id', 'resume-expand');
-}
+projects.addEventListener("click", () => {
+    location.href = "projects.html";
+})
 
-const projectsStyle = e => {
-    e.stopPropagation();
-    projects.setAttribute('id', 'projects-expand');
-}
+github.addEventListener("click", () => {
+    window.open("https://github.com/m6english");
+});
 
-const githubStyle = e => {
-    e.stopPropagation();
-    github.setAttribute('id', 'github-expand');
-}
 
-const linkedInStyle = e => {
-    e.stopPropagation();
-    linkedIn.setAttribute('id', 'linkedin-expand');
-}
+linkedIn.addEventListener("click", () => {
+    window.open("https://www.linkedin.com/in/matthew-english-b46848180/");
+});
 
-const homeStyle = e => {
-    e.stopPropagation();
-    home.setAttribute('id', 'home-expand');
-}
-
-if (mediaQuery.matches) {
-    document.addEventListener("click", () => {
-        resume.setAttribute('id', 'resume');
-        projects.setAttribute('id', 'projects');
-        home.setAttribute('id', 'home');
-        linkedIn.setAttribute('id', 'linkedin');
-        github.setAttribute('id', 'github');
-    })
-    resume.addEventListener("click", resumeStyle);
-    projects.addEventListener("click", projectsStyle);
-    github.addEventListener("click", githubStyle);
-    linkedIn.addEventListener("click", linkedInStyle);
-    home.addEventListener("click", homeStyle);
-};
+home.addEventListener("click", () => {
+    location.href = "index.html";
+})

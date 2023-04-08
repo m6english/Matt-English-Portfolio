@@ -6,47 +6,26 @@ let home = document.getElementById('home');
 
 const btnClose = document.querySelectorAll('.modal-close');
 
-const mediaQuery = window.matchMedia("(max-width: 450px)");
+resume.addEventListener("click", () => {
+    window.open("img/Resume.pdf");
+})
 
-const resumeStyle = e => {
-    e.stopPropagation();
-    resume.setAttribute('id', 'resume-expand');
-}
+home.addEventListener("click", () => {
+    location.href = "index.html";
+})
 
-const githubStyle = e => {
-    e.stopPropagation();
-    github.setAttribute('id', 'github-expand');
-}
+github.addEventListener("click", () => {
+    window.open("https://github.com/m6english");
+});
 
-const linkedInStyle = e => {
-    e.stopPropagation();
-    linkedIn.setAttribute('id', 'linkedin-expand');
-}
 
-const aboutTwoStyle = e => {
-    e.stopPropagation();
-    aboutTwo.setAttribute('id', 'about-expand');
-}
+linkedIn.addEventListener("click", () => {
+    window.open("https://www.linkedin.com/in/matthew-english-b46848180/");
+});
 
-const homeStyle = e => {
-    e.stopPropagation();
-    home.setAttribute('id', 'home-expand');
-}
-
-if (mediaQuery.matches) {
-    document.addEventListener("click", () => {
-        resume.setAttribute('id', 'resume');
-        home.setAttribute('id', 'home');
-        aboutTwo.setAttribute('id', 'about-2');
-        linkedIn.setAttribute('id', 'linkedin');
-        github.setAttribute('id', 'github');
-    })
-    resume.addEventListener("click", resumeStyle);
-    github.addEventListener("click", githubStyle);
-    linkedIn.addEventListener("click", linkedInStyle);
-    aboutTwo.addEventListener("click", aboutTwoStyle);
-    home.addEventListener("click", homeStyle);
-};
+about.addEventListener("click", () => {
+    location.href = "about.html";
+})
 
 // MMBP MODAL
 const mmbpBtn = document.getElementById('mmbp-button');
