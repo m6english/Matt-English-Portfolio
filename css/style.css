@@ -595,38 +595,38 @@ body {
     #about:hover {
         border: 1px solid rgb(0, 0, 156);
         background-color: rgb(0, 0, 156);
-        font-weight: bold;
+        font-size: 13px;
     }
     
     #home:hover {
         border: 1px solid rgb(0, 105, 167);
         background-color: rgb(0, 105, 167);
-        font-weight: bold;
+        font-size: 13px;
     }
     
     
     #linkedin:hover {
         border: 1px solid rgb(0, 57, 80);
         background-color: rgb(0, 57, 80);
-        font-weight: bold;
+        font-size: 13px;
     }
     
     #github:hover {
         border: 1px solid rgb(61, 18, 61);
         background-color: rgb(61, 18, 61);
-        font-weight: bold;
+        font-size: 13px;
     }
     
     #resume:hover {
         border: 1px solid rgb(124, 0, 0);
         background-color: rgb(124, 0, 0);
-        font-weight: bold;
+        font-size: 13px;
     }
     
     #projects:hover {
         border: 1px solid rgb(134, 87, 0);
         background-color: rgb(134, 87, 0);
-        font-weight: bold;
+        font-size: 13px;
     }
 
     .projects-button:hover {
@@ -683,9 +683,11 @@ body {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
         grid-template-areas:
-            "matt intro"
+            "intro intro"
             "matt bio-1"
             "matt bio-2"
+            "matt bio-3"
+
         ;
         margin: 2rem 1rem;
     }
@@ -707,6 +709,11 @@ body {
 
     #bio-2 {
         grid-area: bio-2;
+        width: 100%;
+    }
+
+    #bio-3 {
+        grid-area: bio-3;
         width: 100%;
     }
 
@@ -793,13 +800,18 @@ body {
         grid-template-areas:
             "matt intro intro"
             "matt bio-1 bio-2"
+            "matt bio-1 bio-3"
         ;
         margin: 2rem 1rem;
     }
 
     #bio-1,
     #bio-2 {
-        margin-top: 0;
+        margin: 0 auto;
+    }
+
+    #bio-intro {
+        margin-bottom: 0;
     }
 }
 
