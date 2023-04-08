@@ -2,7 +2,7 @@ const projects = document.getElementById('projects');
 const resume = document.getElementById('resume');
 const github = document.getElementById('github');
 const linkedIn = document.getElementById('linkedin');
-const about = document.getElementById('about');
+const home = document.getElementById('home');
 
 resume.addEventListener("click", () => {
     window.open("img/Resume.pdf");
@@ -21,6 +21,6 @@ linkedIn.addEventListener("click", () => {
     window.open("https://www.linkedin.com/in/matthew-english-b46848180/");
 });
 
-about.addEventListener("click", () => {
-    location.href = "about.html";
+home.addEventListener("click", () => {
+    location.href = "index.html";
 })
