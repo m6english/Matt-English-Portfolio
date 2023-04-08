@@ -4,7 +4,6 @@ const linkedIn = document.getElementById('linkedin');
 const home = document.getElementById('home');
 const btnClose = document.querySelectorAll('.modal-close');
 
-
 resume.addEventListener("click", () => {
     window.open("img/Resume.pdf");
 })
@@ -60,6 +59,11 @@ employeeCode.addEventListener("click", () => {
     window.open("https://github.com/m6english/api-employee-directory");
 })
 
+employeeLive.addEventListener("click", () => {
+    window.open("https://m6english.github.io/api-employee-directory/")
+})
+
+
 // WEBAPP DASHBOARD MODAL
 const graphBtn = document.getElementById('graph-button');
 const graphModal = document.getElementById('graph-modal');
@@ -78,6 +82,11 @@ graphClose.addEventListener("click", () => {
 graphCode.addEventListener("click", () => {
     window.open("https://github.com/m6english/webapp-dashboard");
 })
+
+graphLive.addEventListener("click", () => {
+    window.open("https://m6english.github.io/webapp-dashboard/")
+})
+
 
 // WHEEL OF SUCCESS MODAL
 const wosBtn = document.getElementById('wos-button');
@@ -98,3 +107,6 @@ wosCode.addEventListener("click", () => {
     window.open("https://github.com/m6english/wheel-of-success");
 })
 
+wosLive.addEventListener("click", () => {
+    window.open("https://m6english.github.io/wheel-of-success/")
+})
