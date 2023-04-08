@@ -108,14 +108,9 @@ body {
     animation-delay: 1.7s;
 }
 
-#about {
+#home {
     border: 1px solid blue;
     background-color: blue;
-}
-
-#home {
-    border: 1px solid rgb(0, 162, 255);
-    background-color: rgb(0, 162, 255);
 }
 
 
@@ -527,7 +522,6 @@ body {
     }
 }
 
-
 /*======================================
 ============= MEDIA QUERIES ============
 =======================================*/
@@ -576,18 +570,11 @@ body {
         font-size: 22px;
     }
 
-    #about:hover {
-        border: 1px solid rgb(0, 0, 156);
-        background-color: rgb(0, 0, 156);
-        font-size: 13px;
-    }
-
     #home:hover {
-        border: 1px solid rgb(0, 105, 167);
-        background-color: rgb(0, 105, 167);
+        border: 1px solid rgb(0, 0, 151);
+        background-color: rgb(0, 0, 151);
         font-size: 13px;
     }
-
 
     #linkedin:hover {
         border: 1px solid rgb(0, 57, 80);
