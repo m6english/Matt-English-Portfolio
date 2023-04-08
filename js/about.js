@@ -1,8 +1,8 @@
-let projects = document.getElementById('projects');
-let resume = document.getElementById('resume');
-let github = document.getElementById('github');
-let linkedIn = document.getElementById('linkedin');
-let home = document.getElementById('home');
+const projects = document.getElementById('projects');
+const resume = document.getElementById('resume');
+const github = document.getElementById('github');
+const linkedIn = document.getElementById('linkedin');
+const home = document.getElementById('home');
 
 resume.addEventListener("click", () => {
     window.open("img/Resume.pdf");

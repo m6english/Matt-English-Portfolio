@@ -1,10 +1,10 @@
-let resume = document.getElementById('resume');
-let github = document.getElementById('github');
-let linkedIn = document.getElementById('linkedin');
-let aboutTwo = document.getElementById('about-2');
-let home = document.getElementById('home');
-
+const resume = document.getElementById('resume');
+const github = document.getElementById('github');
+const linkedIn = document.getElementById('linkedin');
+const about = document.getElementById('about');
+const home = document.getElementById('home');
 const btnClose = document.querySelectorAll('.modal-close');
+
 
 resume.addEventListener("click", () => {
     window.open("img/Resume.pdf");
