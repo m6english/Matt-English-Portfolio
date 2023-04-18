@@ -396,20 +396,10 @@ body {
     grid-area: modal-buttons;
 }
 
-#employee-live:hover,
-#graph-live:hover,
-#wos-live:hover,
+.modal-live:hover, 
 .modal-code:hover {
     background-color: rgb(104, 104, 104);
     color: white;
-}
-
-#mmbp-live {
-    background-color: rgb(185, 185, 185);
-}
-
-#mmbp-live:hover {
-    cursor: default;
 }
 
 .modal-live,

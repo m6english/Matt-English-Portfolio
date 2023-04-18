@@ -40,6 +40,10 @@ mmbpCode.addEventListener("click", () => {
     window.open("https://github.com/m6english/MMBP2");
 })
 
+mmbpLive.addEventListener("click", () => {
+    window.open("https://midmichiganbodyparts.com/");
+})
+
 // EMPLOYEE DIRECTORY MODAL
 const employeeBtn = document.getElementById('employee-button');
 const employeeModal = document.getElementById('employee-modal');
@@ -60,7 +64,7 @@ employeeCode.addEventListener("click", () => {
 })
 
 employeeLive.addEventListener("click", () => {
-    window.open("https://m6english.github.io/api-employee-directory/")
+    window.open("https://m6english.github.io/api-employee-directory/");
 })
 
 
@@ -84,7 +88,7 @@ graphCode.addEventListener("click", () => {
 })
 
 graphLive.addEventListener("click", () => {
-    window.open("https://m6english.github.io/webapp-dashboard/")
+    window.open("https://m6english.github.io/webapp-dashboard/");
 })
 
 
@@ -108,5 +112,5 @@ wosCode.addEventListener("click", () => {
 })
 
 wosLive.addEventListener("click", () => {
-    window.open("https://m6english.github.io/wheel-of-success/")
+    window.open("https://m6english.github.io/wheel-of-success/");
 })
